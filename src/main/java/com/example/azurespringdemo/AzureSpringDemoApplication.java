@@ -17,6 +17,10 @@ public class AzureSpringDemoApplication {
 	public String showMessage1() {
 		return "Success";
 	}
+	@GetMapping("/*")
+	public String errorMessage() {
+		return "404 Error";
+	}
 	
 	public static void main(String[] args) {
 		SpringApplication.run(AzureSpringDemoApplication.class, args);
