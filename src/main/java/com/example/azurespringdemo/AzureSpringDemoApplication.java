@@ -9,8 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AzureSpringDemoApplication {
 
-	@GetMapping("/home")
+	@GetMapping("/")
 	public String showMessage() {
+		return "Success";
+	}
+	@GetMapping("/home")
+	public String showMessage1() {
 		return "Success";
 	}
 	
