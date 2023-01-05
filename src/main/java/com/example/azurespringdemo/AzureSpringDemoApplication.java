@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-//@CrossOrigin("*")
+@CrossOrigin("https://react-demo.azurewebsites.net")
 @SpringBootApplication
 @RestController
 public class AzureSpringDemoApplication {
