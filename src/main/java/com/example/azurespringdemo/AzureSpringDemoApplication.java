@@ -6,17 +6,13 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+//@CrossOrigin("*")
 @SpringBootApplication
 @RestController
-@CrossOrigin("*")
 public class AzureSpringDemoApplication {
-
+	
 	@GetMapping("/")
 	public String showMessage() {
-		return "Success";
-	}
-	@GetMapping("/home")
-	public String showMessage1() {
 		return "Success";
 	}
 	@GetMapping("/*")
@@ -26,6 +22,5 @@ public class AzureSpringDemoApplication {
 	
 	public static void main(String[] args) {
 		SpringApplication.run(AzureSpringDemoApplication.class, args);
-	}
-
+    }
 }
